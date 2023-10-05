@@ -24,7 +24,37 @@ else:
 
 # challenge on creating a function to accept a "bill" value and offer a tipe of 0%, 15%, 20%, or 25% depending on if the service was "bad, okay, good, or great".
 
-bill = float(input("Enter your bill: "))
-tip = float(input("(0%, 15%, 20%, OR 25%) Enter your tip percentage: "))
+x = input("Enter your bill amount: ")
+y = input("Enter how your service was; bad, okay, good, great: ")
 
-print(bill + )
+if y == "bad":
+    print("Your tip is 0%, Sorry about the service.")
+elif y == "okay":
+    print("Your tip is 15%, Thank you, please come again!")
+elif y == "good":
+    print("Your tip is 20%, Thank you, please come again!")
+elif y == "great":
+    print("Your tip is 25%, Thank you, please come again!")
+else:
+    print("Sorry I don't understand.")
+
+# challenge finding all the factors of a number
+
+x = int(input("Enter a number: "))
+def print_factors(x):
+    print("The factors of",x,"are: ")
+    for i in  range(1, x + 1):
+        if x % i == 0:
+            print(i)
+
+num = x
+print_factors(num)
+
+# challenge to find the greatest common factor between 2 numbers
+
+x = int(input("Enter an integer: "))
+y = int(input("Enter another integer: "))
+
+r = x%y
+q = int(x/y)
+
