@@ -54,7 +54,11 @@ print_factors(num)
 
 x = int(input("Enter an integer: "))
 y = int(input("Enter another integer: "))
-
 r = x%y
 q = int(x/y)
-
+while(r!=0):
+    x = y
+    y = r
+    q = int(x/y)
+    r = x - (y * q)
+print("The GCF of the two integers is: ", y)
